@@ -1,0 +1,74 @@
+.accordion {
+  width: 70%;
+}
+.accordion__wrapper {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 50px;
+}
+.accordion__item {
+  border-bottom: 1px solid #000;
+  margin-bottom: 40px;
+}
+.accordion__item:last-child {
+  margin-bottom: 0px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito Sans";
+  color: #dae4ed;
+  transition: 0.3s all ease;
+}
+
+body {
+  background: #000;
+  opacity: 1;
+}
+
+main {
+  min-height: calc(100vh - 50px);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 80%;
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #000;
+}
+
+p {
+  color: #000;
+}
+
+h3 {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+span {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/*# sourceMappingURL=main.css.map */
