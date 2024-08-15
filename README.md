@@ -1,4 +1,4 @@
-country-list project
+accordion.js project 
 
 You can start the project with the "npm start" command.
 
