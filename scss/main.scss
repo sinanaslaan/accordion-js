@@ -15,7 +15,7 @@ body {
 }
 
 main {
-    min-height: calc(100vh - 50px);
+    min-height: calc(100vh - 0px);
     position: relative;
     display: flex;
     align-items: center;
@@ -34,10 +34,18 @@ main {
 h2 {
     margin-bottom: 20px;
     color: #000;
+    @media (max-width: 576px) {
+        font-size: 15px;
+    }
 }
 
 p {
     color: #000;
+    margin-bottom: 20px;
+    
+    @media (max-width: 576px) {
+        font-size: 13px;
+    }
 }
 
 h3 {

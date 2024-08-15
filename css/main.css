@@ -1,17 +1,56 @@
 .accordion {
   width: 70%;
 }
+@media (max-width: 576px) {
+  .accordion {
+    width: 100%;
+  }
+}
 .accordion__wrapper {
   background-color: #fff;
   border-radius: 10px;
   padding: 50px;
 }
+@media (max-width: 576px) {
+  .accordion__wrapper {
+    padding: 20px;
+  }
+}
 .accordion__item {
-  border-bottom: 1px solid #000;
+  border: 1px solid #e1dbdb;
+  border-radius: 10px;
+  padding: 20px 20px 0px 20px;
   margin-bottom: 40px;
+  box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+  transition: 0.3s all ease;
 }
 .accordion__item:last-child {
   margin-bottom: 0px;
+}
+.accordion__item a ::before {
+  content: "+";
+  float: right;
+  transition: 0.3s all ease;
+}
+.accordion__item a.active ::before {
+  content: "+";
+  transform: rotate(-225deg);
+  transition: 0.3s all ease;
+}
+.accordion__content {
+  max-height: 0px;
+  opacity: 0;
+  overflow: hidden;
+}
+.accordion__content.active {
+  max-height: 150px;
+  opacity: 1;
+  overflow: auto;
+}
+@media (max-width: 576px) {
+  .accordion__content.active {
+    max-height: 500px;
+  }
 }
 
 * {
@@ -29,7 +68,7 @@ body {
 }
 
 main {
-  min-height: calc(100vh - 50px);
+  min-height: calc(100vh - 0px);
   position: relative;
   display: flex;
   align-items: center;
@@ -48,9 +87,20 @@ h2 {
   margin-bottom: 20px;
   color: #000;
 }
+@media (max-width: 576px) {
+  h2 {
+    font-size: 15px;
+  }
+}
 
 p {
   color: #000;
+  margin-bottom: 20px;
+}
+@media (max-width: 576px) {
+  p {
+    font-size: 13px;
+  }
 }
 
 h3 {
